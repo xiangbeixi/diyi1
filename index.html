@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xiangbeixin</title>
+    <style>
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .row {
+        flex-direction: row;
+      }
+      .导航 {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(212, 210, 210);
+        font-size: 14px;
+        color: #666;
+      }
+      .阴影 {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .交叉轴居中 {
+        align-items: center;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .宽度 {
+        width: 70%;
+      }
+      .evenly {
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body class="flex column 交叉轴居中">
+    <!-- 网站标题 -->
+    <div style="width: 400px" class="导航 阴影">
+      <h1 style="text-align: center">向北行的个人网站</h1>
+    </div>
+    <!-- 内容区 -->
+    <div style="font-size: 17px" class="导航 阴影 宽度">
+      <p>这是我的第一个网站</p>
+      <p>目前正在跟随b站up主康文昌学习如何制作网站</p>
+      <p>以后会使用学来的知识逐渐完善这个网站</p>
+    </div>
+    <!-- 作品展示区 -->
+    <div class="flex 导航 阴影 宽度 column">
+      <div style="font-size: 17px"><p>在B站学习blender，阶段作品展示</p></div>
+      <div class="flex row evenly">
+        <!-- 第一幅画 -->
+        <div>
+          <img
+            src="./珍珠少女2.png"
+            alt="作业1"
+            style="width: 150px; height: auto"
+            class="导航 阴影"
+          />
+          <p style="text-align: center">第一做的作业</p>
+        </div>
+        <!-- 第二幅画 -->
+        <div>
+          <img
+            src="./珍珠少女1.png"
+            alt="作业2"
+            style="width: 150px; height: auto"
+            class="导航 阴影"
+          />
+          <p style="text-align: center">第二次做的作业</p>
+        </div>
+      </div>
+    </div>
+    <!-- 链接区 -->
+    <div class="flex 导航 阴影 宽度">
+      <div class="阴影">
+        <a href="./感谢信模板.html">感谢信模板</a>
+      </div>
+    </div>
+  </body>
+</html>
